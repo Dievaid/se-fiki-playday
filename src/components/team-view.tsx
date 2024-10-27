@@ -10,7 +10,7 @@ export const TeamView = () => {
                 <TeamCard name="Bianca Șerban" desc="Business Analyst" photo="/serban.bianca.jpeg" email="bianca.serban2506@gmail.com"/>
                 <TeamCard name="David Capragiu" desc="Software Engineer" photo="https://avatars.githubusercontent.com/u/63539529?v=4" email="david.capragiu@gmail.com"/>
                 <TeamCard name="Ștefăniță Ioniță" desc="Software Engineer" photo="https://avatars.githubusercontent.com/u/72273318?v=4" email="stefanita.ionita0@gmail.com"/>
-                <TeamCard name="Bogdan Brutaru" desc="Quality Assurance Engineer" photo="/brutaru.bogdan.jpg" email="brutaru_bogdan11@yahoo.com"/>
+                <TeamCard name="Bogdan Brutaru" desc="Quality Assurance Engineer" photo="/brutaru.bogdan.jpg" email="brutaru.bogdan123@gmail.com"/>
             </div>
         </>
     )

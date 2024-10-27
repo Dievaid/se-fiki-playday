@@ -32,7 +32,7 @@ export const AppSidebar = () => {
                             <SidebarGroupLabel className="text-lg">Milestone 1</SidebarGroupLabel>
                             <CollapsibleTrigger asChild className="">
                                     <SidebarMenuButton>
-                                        <img src="../src/assets/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
+                                        <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
                                     </SidebarMenuButton>
                             </CollapsibleTrigger>
                         </div>

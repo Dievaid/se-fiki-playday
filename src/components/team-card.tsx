@@ -11,7 +11,7 @@ export const TeamCard : React.FC<TeamCardProps> = (props) => {
     const { name, desc, photo, email } = props;
     
     return (
-        <Card className="flex items-center flex-col">
+        <Card className="flex items-center flex-col bg-[#eee9ef] shadow-lg border-3 border-[#b1a6ac] border-solid border-x-2">
             <CardHeader className="self-start">
                 <CardTitle>{name}</CardTitle>
                 <CardDescription>{desc}</CardDescription>

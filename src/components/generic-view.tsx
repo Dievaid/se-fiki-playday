@@ -20,7 +20,7 @@ export const GenericView = () => {
     ]);
 
     return (
-        <div className="w-full flex justify-center items-center p-10 flex-col space-y-20 mb-[15dvh]">
+        <div className="w-full flex justify-center items-center p-10 flex-col space-y-20 mb-[15dvh] bg-[#f1e6dd]">
             {Array.from(pageMap.values())}
         </div>
     );

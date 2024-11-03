@@ -21,7 +21,7 @@ export const AppSidebar = () => {
     }
 
     return (
-        <Sidebar className="w-[310px]">
+        <Sidebar className="w-[310px] bg-[#cfe4e5] shadow-xl">
             <SidebarHeader>
                 <SidebarGroupLabel className="text-xl mt-2">Startup Engineering - PlayDay</SidebarGroupLabel>
             </SidebarHeader>
@@ -29,7 +29,7 @@ export const AppSidebar = () => {
                 <SidebarGroup>
                     <Collapsible>
                         <div className="flex w-full">
-                            <SidebarGroupLabel className="text-lg">Milestone 1</SidebarGroupLabel>
+                            <SidebarGroupLabel className="text-lg text-[#e8572f]">Milestone 1</SidebarGroupLabel>
                             <CollapsibleTrigger asChild className="">
                                     <SidebarMenuButton>
                                         <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
@@ -38,7 +38,7 @@ export const AppSidebar = () => {
                         </div>
                         <SidebarGroupContent>
                             <SidebarMenu className="space-y-2 p-4">
-                                <CollapsibleContent className="text-sm space-y-2 p-4">
+                                <CollapsibleContent className="text-sm space-y-2 p-4 text-[#2f2e2f]">
                                     <SidebarMenuItem onClick={handler}>Team and roles</SidebarMenuItem>
                                     <SidebarMenuItem onClick={handler}>Problem</SidebarMenuItem>
                                     <SidebarMenuItem onClick={handler}>Solution</SidebarMenuItem>

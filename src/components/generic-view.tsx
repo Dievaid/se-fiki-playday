@@ -1,6 +1,4 @@
-import { useContext } from "react";
 import { TeamView } from "./team-view";
-import { SelectionContext } from "@/lib/selection-provider";
 import { Problem } from "./problem";
 import { Solution } from "./solution";
 import { CustomerSegments } from "./customer-segments";
@@ -10,9 +8,7 @@ import { CostStructure } from "./cost-structure";
 import { RevenueStreams } from "./revenue-streams";
 
 export const GenericView = () => {
-    const { selection } = useContext(SelectionContext)!;
-
-    const pageMap : Map<string, JSX.Element> = new Map([
+    const pageMap : Map<string, React.JSX.Element> = new Map([
         ["Team and roles", <TeamView />],
         ["Problem", <Problem />],
         ["Solution", <Solution />],
@@ -25,7 +21,7 @@ export const GenericView = () => {
 
     return (
         <div className="w-full flex justify-center items-center p-10 flex-col space-y-20 mb-[15dvh]">
-            {pageMap.get(selection) || <TeamView />}
+            {Array.from(pageMap.values())}
         </div>
     );
 }

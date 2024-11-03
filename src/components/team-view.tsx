@@ -1,9 +1,12 @@
+import { useScrollRef } from "@/hooks/use-scroll"
 import { TeamCard } from "./team-card"
 
 export const TeamView = () => {
+    const ref = useScrollRef<HTMLParagraphElement>("Team and roles");
+
     return (
         <>
-            <p className="text-2xl font-semibold">This is our energetic team.</p>
+            <p className="text-2xl font-semibold" ref={ref}>This is our energetic team.</p>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[50px] gap-x-[5vw]">
                 <TeamCard name="Sebastian Severin" desc="Project Manager" photo="/severin.sebastian.jpg" email="sebastian27severin@gmail.com"/>
                 <TeamCard name="Iulia Olteanu" desc="UI/UX Analyst" photo="/olteanu.iulia.jpg" email="iuliaolteanu50@gmail.com"/>

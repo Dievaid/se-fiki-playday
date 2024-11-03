@@ -1,7 +1,11 @@
+import { useScrollRef } from "@/hooks/use-scroll";
+
 export const Competition = () => {
+    const ref = useScrollRef<HTMLParagraphElement>("Competition");
+    
     return (
         <>
-            <p className="text-2xl font-semibold">Our competitors are strong. So are we.</p>
+            <p className="text-2xl font-semibold" ref={ref}>Our competitors are strong. So are we.</p>
             <div className="text-wrap w-[50%] text-lg text-justify">
                 PlayDay faces competition from similar field reservation apps, such as Pitchfinder and TerenPlay, which provide users with options for locating and booking sports fields. Additionally, many individual venues and activity centers offer their own booking services through dedicated apps or websites, creating a fragmented experience for users who have to navigate multiple platforms. Furthermore, training sessions and group activities are often promoted on social media platforms, requiring users to follow various pages and accounts to stay updated. PlayDay consolidates these services into a single, user-friendly platform, offering a streamlined and accessible experience for all reservation needs.
             </div>

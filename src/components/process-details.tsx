@@ -1,20 +1,13 @@
 import { generateItems } from "@/hooks/generate-items";
 import { useScrollRef } from "@/hooks/use-scroll"
 
-import Carousel from "react-multi-carousel";
+import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card } from "./ui/card";
 import { Accordion, AccordionItem, AccordionTrigger } from "./ui/accordion";
 import { AccordionContent } from "@radix-ui/react-accordion";
 
 import { FaBookOpenReader } from "react-icons/fa6";
 import { FaQuestion } from "react-icons/fa6";
-
-const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 1,
-    },
-};
 
 interface QPItemProps {
     question: string;
@@ -49,22 +42,12 @@ export const ProcessDetails = () => {
                     We began with friends and acquaintances through WhatsApp for casual feedback. This allowed us to quickly understand the specific frustrations users face, like unreliable field availability and last-minute cancellations. Using familiar connections helped build trust, allowing for honest feedback about the hassles in organizing games and finding reliable teammates.</p>
                 <p>By keeping conversations informal and exploratory, we followed “The Mom Test” principles, avoiding direct pitches and instead listening for underlying problems. Each conversation revealed new angles, such as the wasted time spent calling unresponsive field owners or dealing with no-show teammates. These insights became the basis for shaping PlayDay’s core features, showing us where a streamlined booking and team-filling platform could genuinely make a difference.</p>
 
-                <Carousel
-                    swipeable={true}
-                    draggable={false}
-                    showDots={true}
-                    responsive={responsive}
-                    ssr={false}
-                    infinite={true}
-                    autoPlay={true}
-                    autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px w-[40%]"
-                >
-                    {generateItems("conversation", 4)}
+                <Carousel draggable={false}>
+                    <CarouselContent>
+                        {generateItems("conversation", 4)}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
                 </Carousel>
 
                 <div className="flex items-center">
@@ -135,23 +118,13 @@ export const ProcessDetails = () => {
                 <p>Another major pain point for customers is the inconsistency in field facilities and pricing. Some clients reported feeling misled after arriving at fields that lacked promised amenities or discovering unexpected charges. Inconsistent standards and a lack of transparency in field amenities add an extra layer of frustration, as customers often only find out about these shortcomings after arriving on-site. This discrepancy between expectation and reality deters potential users, reducing the likelihood they’ll use the same venue again or recommend it to others.</p>
                 <p>Enthusiasts trying to organize games often face last-minute cancellations from teammates. This pattern can completely derail plans, especially when these cancellations leave teams too short-handed to play. Customers also note that even with group chats and social media groups, it’s difficult to find reliable substitutes or additional players in time. The lack of a dedicated space for last-minute team coordination means users often turn to fragmented solutions, like forums and social media, which are unreliable and time-consuming.</p>
                 <p>Field owners currently rely on word of mouth, social media, or limited advertising to reach potential clients. While this can sometimes bring in repeat business, it lacks the broad reach and ease that would attract new customers. The owner we talked to said that while he’s interested in expanding his client base, he doesn’t have the resources to actively market their field. The field owner we talked to, Caravan Marian, told us valuable insights about the business. The program for the field is 7-17 and after 17 is for subscriptions only. The biggest problem he sees is the people. Why? Because everyone wants to play at the same time more or less. It becomes tiring and annoying to answer the phone calls and say the same thing over and over again. The only way the owner keeps in touch with the people renting the fields is through telephone which becomes exhausting over time because sometimes the people will answer, other times the owner will not answer.</p>
-            
-                <Carousel
-                    swipeable={true}
-                    draggable={false}
-                    showDots={true}
-                    responsive={responsive}
-                    ssr={false}
-                    infinite={true}
-                    autoPlay={true}
-                    autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px w-[40%]"
-                >
-                    {generateItems("graphs", 6)}
+
+                <Carousel draggable={false}>
+                    <CarouselContent>
+                        {generateItems("graphs", 6)}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
                 </Carousel>
 
                 <p>The feedback gathered from our recent survey reveals valuable insights into the preferences and experiences of users. We tried to first understand the age groups and how active the people completing the form are. Among the 61 respondents, a substantial 24 identified themselves as enthusiastic football players, alongside 13 basketball practitioners and 14 Laser Tag participants. This clearly illustrates a vibrant community of active individuals who enjoy team-oriented sports.</p>

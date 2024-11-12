@@ -11,16 +11,16 @@ export const TeamCard : React.FC<TeamCardProps> = (props) => {
     const { name, desc, photo, email } = props;
     
     return (
-        <Card className="flex items-center flex-col bg-[#eee9ef] shadow-lg border-3 border-[#b1a6ac] border-solid border-x-2">
+        <Card className="flex items-center flex-col bg-gradient-to-b from-gray-50 from-65% to-emerald-300 border-solid">
             <CardHeader className="self-start">
                 <CardTitle>{name}</CardTitle>
                 <CardDescription>{desc}</CardDescription>
             </CardHeader>
             <CardContent>
-                <img className="w-[200px]" src={photo} alt={`${name}_${desc}`}/>
+                <img className="w-[200px] rounded-[6rem]" src={photo} alt={`${name}_${desc}`}/>
             </CardContent>
             <CardFooter className="flex justify-center">
-                <a className="hover:underline hover:text-blue-400" href={`mailto:${email}`}>{email}</a>
+                <a className="font-[400] hover:underline hover:text-violet-700" href={`mailto:${email}`}>{email}</a>
             </CardFooter>
         </Card>
     );

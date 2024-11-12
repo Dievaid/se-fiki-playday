@@ -13,6 +13,18 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { useContext } from "react";
 import { SelectionContext } from "@/lib/selection-provider";
 
+interface SidebarMenuItemProps {
+    onClick: (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => void;
+}
+
+const CustomSidebarMenuItem : React.FC<React.PropsWithChildren<SidebarMenuItemProps>> = ({ children, onClick }) => {
+    return (
+        <div className="bg-white hover:bg-teal-300 hover:text-neutral-800 w-full rounded-sm text-md p-2">
+            <SidebarMenuItem onClick={onClick} className="font-medium">{children}</SidebarMenuItem>
+        </div>
+    );
+}
+
 export const AppSidebar = () => {
     const { setSelection } = useContext(SelectionContext)!;
 
@@ -21,15 +33,15 @@ export const AppSidebar = () => {
     }
 
     return (
-        <Sidebar className="lg:w-[310px] md:w-[220px] bg-[#cfe4e5] shadow-xl">
-            <SidebarHeader>
-                <SidebarGroupLabel className="text-xl mt-2">Startup Engineering - PlayDay</SidebarGroupLabel>
+        <Sidebar className="lg:w-[310px] md:w-[220px] bg-teal-700 shadow-xl">
+            <SidebarHeader className="bg-teal-700">
+                <SidebarGroupLabel className="text-xl mt-2 text-white">Startup Engineering - PlayDay</SidebarGroupLabel>
             </SidebarHeader>
-            <SidebarContent>
+            <SidebarContent className="bg-teal-700">
                 <SidebarGroup>
                     <Collapsible>
                         <div className="flex w-full">
-                            <SidebarGroupLabel className="text-lg text-[#e8572f]">Milestone 1</SidebarGroupLabel>
+                            <SidebarGroupLabel className="text-lg text-gray-50">Milestone 1</SidebarGroupLabel>
                             <CollapsibleTrigger asChild className="">
                                     <SidebarMenuButton>
                                         <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
@@ -37,16 +49,17 @@ export const AppSidebar = () => {
                             </CollapsibleTrigger>
                         </div>
                         <SidebarGroupContent>
-                            <SidebarMenu className="p-4">
-                                <CollapsibleContent className="text-sm space-y-2 p-4 text-[#2f2e2f]">
-                                    <SidebarMenuItem onClick={handler}>Team and roles</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Problem</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Solution</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Customer segments</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Competition</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Key metrics</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Cost structure</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Revenue streams</SidebarMenuItem></CollapsibleContent>
+                            <SidebarMenu className="pl-4">
+                                <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
+                                    <CustomSidebarMenuItem onClick={handler}>Team and roles</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Problem</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Solution</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Customer segments</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Competition</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Key metrics</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Cost structure</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Revenue streams</CustomSidebarMenuItem>
+                                </CollapsibleContent>
                             </SidebarMenu>
                         </SidebarGroupContent>
                     </Collapsible>
@@ -54,22 +67,42 @@ export const AppSidebar = () => {
                 <SidebarGroup>
                     <Collapsible>
                         <div className="flex w-full">
-                            <SidebarGroupLabel className="text-lg text-[#e8572f]">Milestone 2</SidebarGroupLabel>
-                            <CollapsibleTrigger asChild className="">
+                            <SidebarGroupLabel className="text-lg text-gray-50">Milestone 2</SidebarGroupLabel>
+                            <CollapsibleTrigger asChild>
                                     <SidebarMenuButton>
                                         <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
                                     </SidebarMenuButton>
                             </CollapsibleTrigger>
                         </div>
                         <SidebarGroupContent>
-                            <SidebarMenu className="p-4">
-                                <CollapsibleContent className="text-sm space-y-2 p-4 text-[#2f2e2f]">
-                                    <SidebarMenuItem onClick={handler}>Problem identification</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Thinking process</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Customer discovery</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Process details</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Insights impact</SidebarMenuItem>
-                                    <SidebarMenuItem onClick={handler}>Are we ready for Customer Validation?</SidebarMenuItem>
+                            <SidebarMenu className="pl-4">
+                                <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
+                                    <CustomSidebarMenuItem onClick={handler}>Problem identification</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Thinking process</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Customer discovery</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Process details</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Insights impact</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Are we ready for Customer Validation?</CustomSidebarMenuItem>
+                                </CollapsibleContent>
+                            </SidebarMenu>
+                        </SidebarGroupContent>
+                    </Collapsible>
+                </SidebarGroup>
+                <SidebarGroup>
+                    <Collapsible>
+                        <div className="flex w-full">
+                            <SidebarGroupLabel className="text-lg text-gray-50">Milestone 3</SidebarGroupLabel>
+                            <CollapsibleTrigger asChild>
+                                    <SidebarMenuButton>
+                                        <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
+                                    </SidebarMenuButton>
+                            </CollapsibleTrigger>
+                        </div>
+                        <SidebarGroupContent>
+                            <SidebarMenu className="pl-4">
+                                <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
+                                    <CustomSidebarMenuItem onClick={handler}>Wireframes</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Landing page</CustomSidebarMenuItem>
                                 </CollapsibleContent>
                             </SidebarMenu>
                         </SidebarGroupContent>

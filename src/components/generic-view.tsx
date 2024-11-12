@@ -13,6 +13,9 @@ import { ProcessDetails } from "./process-details";
 import { InsightsImpact } from "./insights-impact";
 import { CustomerValidation } from "./customer-validation";
 import { MilestoneSeparator } from "./milestone-separator";
+import { SidebarTrigger } from "./ui/sidebar";
+import { Wireframes } from "./wireframes";
+import { LandingPage } from "./landing-page";
 
 export const GenericView = () => {
     const pageMap : Map<string, React.JSX.Element> = new Map([
@@ -32,10 +35,14 @@ export const GenericView = () => {
         ["Process details", <ProcessDetails />],
         ["Insights impact", <InsightsImpact />],
         ["Are we ready for Customer Validation?", <CustomerValidation />],
+        ["3", <MilestoneSeparator milestone={3} />],
+        ["Wireframes", <Wireframes />],
+        ["Landing page", <LandingPage />]
     ]);
 
     return (
-        <div className="w-full flex justify-center items-center p-10 flex-col space-y-20 mb-[15dvh] bg-[#f1e6dd]">
+        <div className="w-full flex justify-center items-center p-10 flex-col space-y-20 mb-[15dvh]">
+            <SidebarTrigger className="fixed top-5 left-10"/>
             {Array.from(pageMap.values())}
         </div>
     );

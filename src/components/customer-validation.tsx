@@ -3,7 +3,7 @@ import { useScrollRef } from "@/hooks/use-scroll"
 import { FaCheck } from "react-icons/fa6";
 
 export const CustomerValidation = () => {
-    const ref = useScrollRef<HTMLParagraphElement>("Customer validation");
+    const ref = useScrollRef<HTMLParagraphElement>("Are we ready for Customer Validation?");
 
     return (
         <>

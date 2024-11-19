@@ -16,6 +16,8 @@ import { MilestoneSeparator } from "./milestone-separator";
 import { SidebarTrigger } from "./ui/sidebar";
 import { Wireframes } from "./wireframes";
 import { LandingPage } from "./landing-page";
+import { UserPersona } from "./user-persona";
+import { UxInterviews } from "./ux-interviews";
 
 export const GenericView = () => {
     const pageMap : Map<string, React.JSX.Element> = new Map([
@@ -37,7 +39,10 @@ export const GenericView = () => {
         ["Are we ready for Customer Validation?", <CustomerValidation />],
         ["3", <MilestoneSeparator milestone={3} />],
         ["Wireframes", <Wireframes />],
-        ["Landing page", <LandingPage />]
+        ["Landing page", <LandingPage />],
+        ["4", <MilestoneSeparator milestone={4} />],
+        ["User persona", <UserPersona />],
+        ["UX interviews", <UxInterviews />],
     ]);
 
     return (

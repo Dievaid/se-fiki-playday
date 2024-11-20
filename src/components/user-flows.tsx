@@ -1,6 +1,6 @@
 import { useScrollRef } from "@/hooks/use-scroll";
-import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "./ui/carousel";
-import { generateItems } from "@/hooks/generate-items";
+// import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "./ui/carousel";
+// import { generateItems } from "@/hooks/generate-items";
 
 export const UserFlows = () => {
     const ref = useScrollRef<HTMLParagraphElement>("User flows");

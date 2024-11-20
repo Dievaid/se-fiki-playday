@@ -4,8 +4,6 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious
 } from "@/components/ui/carousel";
 
 const videoTags = () => {
@@ -45,13 +43,13 @@ export const UxInterviews = () => {
                 <p className="font-semibold" ref={ref}>UX interviews</p>
             </div>
 
+            <p>Drag to the left or right to see Pavel's, Petru's and Matei's experiences.</p>
+
             <div className="flex items-center">
                 <Carousel draggable={false}>
                     <CarouselContent>
                         {videoTags()}
                     </CarouselContent>
-                    <CarouselPrevious className="absolute left-10"/>
-                    <CarouselNext className="absolute right-10"/>
                 </Carousel>
             </div>
 

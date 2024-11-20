@@ -123,6 +123,8 @@ export const AppSidebar = () => {
                                 <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
                                     <CustomSidebarMenuItem onClick={handler}>User persona</CustomSidebarMenuItem>
                                     <CustomSidebarMenuItem onClick={handler}>UX interviews</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>User stories</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>User flows</CustomSidebarMenuItem>
                                 </CollapsibleContent>
                             </SidebarMenu>
                         </SidebarGroupContent>

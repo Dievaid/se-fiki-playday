@@ -10,9 +10,9 @@ import {
 
 const videoTags = () => {
     const files = [
-        "videos/IMG_4304.MOV",
-        "videos/IMG_4307.MOV",
-        "videos/IMG_4309.MOV",
+        "https://www.youtube.com/embed/f5j2_EjFFOc?si=P6A2BCdBk2XU8Wmj",
+        "https://www.youtube.com/embed/Pt-0QI3Z7l8?si=fW6DAL1kB0elcoJL",
+        "https://www.youtube.com/embed/JbbbyyV5PYQ?si=OXl22DKWLBpxcYrO",
     ]
 
     const sayings = [
@@ -23,8 +23,13 @@ const videoTags = () => {
 
     return files.map((file, idx) => {
         return <CarouselItem className="w-full flex flex-col items-center">
-            <div className="ml-[18%]">
-                <video key={`ux_${idx}`} src={file} controls className="w-[80%]"></video>
+            <div>
+                <iframe width="560" height="315"
+                    src={file}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen />
             </div>
             <p className="mt-4 text-wrap w-3/4">{sayings[idx]}</p>
         </CarouselItem>

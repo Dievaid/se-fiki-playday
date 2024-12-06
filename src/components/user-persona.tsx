@@ -10,6 +10,7 @@ export const UserPersona = () => {
             </div>
 
             <img src="persona-se.jpg" onClick={() => window.open("persona-se.jpg", "_blank")} alt="User persona" className="sm:w-[90%] md:w-[60%] lg:w-[50%]" />
+            <img src="persona-se-copy.jpg" onClick={() => window.open("persona-se-copy.jpg", "_blank")} alt="User persona" className="sm:w-[90%] md:w-[60%] lg:w-[50%]" />
         </>
     )
 }

@@ -1,11 +1,5 @@
 import { useScrollRef } from "@/hooks/use-scroll";
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from "@/components/ui/carousel";
-
 const videoTags = () => {
     const files = [
         "https://www.youtube.com/embed/f5j2_EjFFOc?si=P6A2BCdBk2XU8Wmj",
@@ -20,41 +14,33 @@ const videoTags = () => {
     ]
 
     return files.map((file, idx) => {
-        return <CarouselItem className="w-full flex flex-col items-center">
-            <div>
-                <iframe width="560" height="315"
-                    src={file}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen />
-            </div>
-            <p className="mt-4 text-wrap w-3/4">{sayings[idx]}</p>
-        </CarouselItem>
+        return <div className="flex flex-col items-center w-1/2">
+            <iframe width="560" height="315"
+                src={file}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen />
+            <p className="mt-4 text-wrap">{sayings[idx]}</p>
+        </div>
     });
 }
 
 export const UxInterviews = () => {
-    const ref = useScrollRef<HTMLParagraphElement>("UX interviews");
+    const ref = useScrollRef<HTMLParagraphElement>("Interviews");
 
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
-                <p className="font-semibold" ref={ref}>UX interviews</p>
+                <p className="font-semibold" ref={ref}>Interviews</p>
             </div>
 
-            <p>Drag to the left or right to see Pavel's, Petru's and Matei's experiences.</p>
-
-            <div className="flex items-center">
-                <Carousel draggable={false}>
-                    <CarouselContent>
-                        {videoTags()}
-                    </CarouselContent>
-                </Carousel>
+            <div className="flex gap-12 flex-col items-center">
+                {videoTags()}
             </div>
 
             <p className="text-wrap w-3/4">
-            Matei, Petru and Pavel all have in common a few things. They are trying to search for free fields, which they want to be near them. They also end up with the same problem: if the field is busy, they will need to delay or cancel and will, eventually, end up looking to rent a field with money. In this case, PlayDay will be of great help.
+                Matei, Petru and Pavel all have in common a few things. They are trying to search for free fields, which they want to be near them. They also end up with the same problem: if the field is busy, they will need to delay or cancel and will, eventually, end up looking to rent a field with money. In this case, PlayDay will be of great help.
             </p>
         </>
     )

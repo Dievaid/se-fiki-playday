@@ -122,9 +122,29 @@ export const AppSidebar = () => {
                             <SidebarMenu className="pl-4">
                                 <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
                                     <CustomSidebarMenuItem onClick={handler}>User persona</CustomSidebarMenuItem>
-                                    <CustomSidebarMenuItem onClick={handler}>UX interviews</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Interviews</CustomSidebarMenuItem>
                                     <CustomSidebarMenuItem onClick={handler}>User stories</CustomSidebarMenuItem>
                                     <CustomSidebarMenuItem onClick={handler}>User flows</CustomSidebarMenuItem>
+                                </CollapsibleContent>
+                            </SidebarMenu>
+                        </SidebarGroupContent>
+                    </Collapsible>
+                </SidebarGroup>
+                <SidebarGroup>
+                    <Collapsible>
+                        <div className="flex w-full">
+                            <SidebarGroupLabel className="text-lg text-gray-50">Milestone 5</SidebarGroupLabel>
+                            <CollapsibleTrigger asChild>
+                                    <SidebarMenuButton>
+                                        <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
+                                    </SidebarMenuButton>
+                            </CollapsibleTrigger>
+                        </div>
+                        <SidebarGroupContent>
+                            <SidebarMenu className="pl-4">
+                                <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
+                                    <CustomSidebarMenuItem onClick={handler}>Marketing</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Analytics</CustomSidebarMenuItem>
                                 </CollapsibleContent>
                             </SidebarMenu>
                         </SidebarGroupContent>

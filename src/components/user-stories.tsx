@@ -29,9 +29,6 @@ export const UserStories = () => {
 					</div>
 				</div>
 			</div>
-
-
-
         </>
     )
 }

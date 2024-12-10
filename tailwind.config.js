@@ -6,6 +6,9 @@ export default {
 	],
 	theme: {
     	extend: {
+			backgroundImage: {
+				'playday': "url('playday-bg.jpg')",
+			},
     		borderRadius: {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',

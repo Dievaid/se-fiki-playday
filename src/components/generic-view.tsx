@@ -20,6 +20,8 @@ import { UserPersona } from "./user-persona";
 import { UxInterviews } from "./ux-interviews";
 import { UserStories } from "./user-stories";
 import { UserFlows } from "./user-flows";
+import { Marketing } from "./marketing";
+import { Analytics } from "./analytics";
 
 export const GenericView = () => {
     const pageMap : Map<string, React.JSX.Element> = new Map([
@@ -44,9 +46,12 @@ export const GenericView = () => {
         ["Landing page", <LandingPage />],
         ["4", <MilestoneSeparator milestone={4} />],
         ["User persona", <UserPersona />],
-        ["UX interviews", <UxInterviews />],
+        ["Interviews", <UxInterviews />],
         ["User stories", <UserStories />],
         ["User flows", <UserFlows />],
+        ["5", <MilestoneSeparator milestone={5} />],
+        ["Marketing", <Marketing />],
+        ["Analytics", <Analytics />],
     ]);
 
     return (

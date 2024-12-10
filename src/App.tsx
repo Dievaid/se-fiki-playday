@@ -6,12 +6,14 @@ import { GenericView } from "./components/generic-view";
 
 export const App = () => {
   return (
-    <SidebarProvider defaultOpen={true}>
-      <SelectionProvider>
-        <AppSidebar />
-        <GenericView />
-      </SelectionProvider>
-    </SidebarProvider>
+    <div className="">
+      <SidebarProvider defaultOpen={true}>
+        <SelectionProvider>
+          <AppSidebar />
+          <GenericView />
+        </SelectionProvider>
+      </SidebarProvider>
+    </div>
   );
 }
 

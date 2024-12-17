@@ -22,6 +22,9 @@ import { UserStories } from "./user-stories";
 import { UserFlows } from "./user-flows";
 import { Marketing } from "./marketing";
 import { Analytics } from "./analytics";
+import { MarketSize } from "./market-size";
+import { MarketCompetition } from "./market-competition";
+import { PotentialMarketShare } from "./potential-market-share";
 
 export const GenericView = () => {
     const pageMap : Map<string, React.JSX.Element> = new Map([
@@ -52,6 +55,10 @@ export const GenericView = () => {
         ["5", <MilestoneSeparator milestone={5} />],
         ["Marketing", <Marketing />],
         ["Analytics", <Analytics />],
+        ["6", <MilestoneSeparator milestone={6} />],
+        ["Market Size", <MarketSize />],
+        ["Market Competition", <MarketCompetition />],
+        ["Potential Market Share", <PotentialMarketShare />],
     ]);
 
     return (

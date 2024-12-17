@@ -150,6 +150,27 @@ export const AppSidebar = () => {
                         </SidebarGroupContent>
                     </Collapsible>
                 </SidebarGroup>
+                <SidebarGroup>
+                    <Collapsible>
+                        <div className="flex w-full">
+                            <SidebarGroupLabel className="text-lg text-gray-50">Milestone 6</SidebarGroupLabel>
+                            <CollapsibleTrigger asChild>
+                                    <SidebarMenuButton>
+                                        <img src="/arrow-list-expand-1.svg" className="mt-[0.2rem] size-[2rem]"></img>
+                                    </SidebarMenuButton>
+                            </CollapsibleTrigger>
+                        </div>
+                        <SidebarGroupContent>
+                            <SidebarMenu className="pl-4">
+                                <CollapsibleContent className="text-sm space-y-2 pl-2 pt-1 pr-4 text-[#2f2e2f]">
+                                    <CustomSidebarMenuItem onClick={handler}>Market Size</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Market Competition</CustomSidebarMenuItem>
+                                    <CustomSidebarMenuItem onClick={handler}>Potential Market Share</CustomSidebarMenuItem>
+                                </CollapsibleContent>
+                            </SidebarMenu>
+                        </SidebarGroupContent>
+                    </Collapsible>
+                </SidebarGroup>
             </SidebarContent>
         </Sidebar>
     );

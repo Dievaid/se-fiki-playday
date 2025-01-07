@@ -26,6 +26,7 @@ import { MarketSize } from "./market-size";
 import { MarketCompetition } from "./market-competition";
 import { PotentialMarketShare } from "./potential-market-share";
 import { Mvp } from "./mvp";
+import { FirstSale } from "./first-sale";
 
 export const GenericView = () => {
     const pageMap : Map<string, React.JSX.Element> = new Map([
@@ -62,6 +63,8 @@ export const GenericView = () => {
         ["Potential Market Share", <PotentialMarketShare />],
         ["7", <MilestoneSeparator milestone={7} />],
         ["MVP", <Mvp />],
+        ["8", <MilestoneSeparator milestone={8} />],
+        ["First Sale", <FirstSale />]
     ]);
 
     return (

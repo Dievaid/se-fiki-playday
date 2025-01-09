@@ -77,6 +77,10 @@ export const PotentialMarketShare = () => {
             <p className="text-wrap w-1/2 text-lg text-justify">
             PlayDay's potential market share in Romania is promising, particularly in urban areas where structured sports activities are gaining popularity. Starting with an estimated Total Addressable Market (TAM) of €150M annually, PlayDay could achieve a 1% market share in its first year, representing approximately 15,000 active urban users and €1.5M in revenue. With strategic marketing and operational improvements, this share could grow to 5% within five years, reaching 75,000 active users and generating an estimated €11M annually. These projections are based on an average revenue of €2–€5 per booking and 10–15 bookings per user each year. While initial growth may be gradual due to market fragmentation and strong competition from platforms like TerenPlay and local facilities, PlayDay’s potential lies in its ability to centralize and streamline sports field bookings, gradually increasing adoption and capturing a larger share of the expanding market.
             </p>
+
+            <p className="text-wrap w-1/2 text-lg text-justify">
+            In Romania, the average tennis field rental is around 60-80 RON and for a basketball/football field is around 500-750 RON, considering the rent would last for 2 hours. In order to reach our targets, the optimal fee for our service would range from 2€ to 5€ after several calculations. 
+            </p>
         </>
     )
 }

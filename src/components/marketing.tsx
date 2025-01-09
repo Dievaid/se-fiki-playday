@@ -19,7 +19,7 @@ export const Marketing = () => {
                 <p className="font-semibold" ref={ref}>Marketing</p>
             </div>
 
-            <p className="text-xl text-wrap w-1/2 text-justify">
+            <p className="text-xl text-wrap w-1/2 sm:w-3/4 text-justify">
                 Our marketing campaign leveraged Facebook and WhatsApp to promote PlayDay. WhatsApp emerged as the most effective platform, thanks to its speed and reliability, allowing us to connect directly with our target audience. As seen in the screenshots, people engaged with the messages and posts, validating their relevance and appeal. However, our efforts on Facebook were hindered by post deletions, limiting their overall impact despite initial reactions.
             </p>
 
@@ -59,7 +59,7 @@ export const Marketing = () => {
                 </Carousel>
 
             </div>
-            <p className="text-xl text-wrap w-1/2 text-justify mt-12">
+            <p className="text-xl text-wrap w-1/2 sm:w-3/4 text-justify mt-12">
                 We also created a newsletter to keep users engaged and informed. To encourage signups, we implemented a "Get Started" button on the platform, which collects email addresses from interested users seamlessly. This approach has been effective in building a growing subscriber base, despite initial tracking issues.
             </p>
 

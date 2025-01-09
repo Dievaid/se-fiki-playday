@@ -11,7 +11,7 @@ export const TeamView = () => {
                 <FaPeopleGroup />
                 <p>This is our energetic team.</p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[50px] gap-x-[5vw]">
+            <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-y-[50px] gap-x-[5vw]">
                 <TeamCard name="Sebastian Severin" desc="Project Manager" photo="/severin.sebastian.jpg" email="sebastian27severin@gmail.com"/>
                 <TeamCard name="Iulia Olteanu" desc="UI/UX Analyst" photo="/olteanu.iulia.jpg" email="iuliaolteanu50@gmail.com"/>
                 <TeamCard name="Bianca Șerban" desc="Business Analyst" photo="/serban.bianca.jpeg" email="bianca.serban2506@gmail.com"/>

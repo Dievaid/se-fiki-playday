@@ -31,12 +31,12 @@ export const MarketCompetition = () => {
                 </Card>
             </div>
 
-            <p className="text-wrap lg:w-1/2 md:w-3/4 text-lg text-justify">
+            <p className="text-wrap lg:w-1/2 md:w-3/4 sm:w-3/4 text-lg text-justify">
             Additionally, local facilities often operate independently, renting football and other courts directly to users through telephone or face-to-face interactions.
             Indirect competition arises from fitness centers, which provide structured indoor exercise alternatives, and parks and public spaces, serving as free options for casual sports activities.
             </p>
 
-            <p className="text-wrap lg:w-1/2 md:w-3/4 text-lg text-justify">
+            <p className="text-wrap lg:w-1/2 md:w-3/4 sm:w-3/4 text-lg text-justify">
             Furthermore, social media groups on platforms like Facebook and WhatsApp facilitate informal sports gatherings, allowing individuals to organize games without formal booking systems.
             For instance, the Bucharest Sports & Games Group on InterNations connects like-minded individuals for various sports activities. 
             </p>

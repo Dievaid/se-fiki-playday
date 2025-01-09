@@ -37,7 +37,7 @@ export const ProcessDetails = () => {
                 <p className="font-semibold" ref={ref}>Process details</p>
             </div>
 
-            <div className="text-wrap text-justify w-[50%] space-y-10">
+            <div className="text-wrap text-justify w-[50%] sm:w-3/4 space-y-10">
                 <p>To identify customer segments for PlayDay, we first categorized sports enthusiasts by age groups: 14-18, 19-25, 26-40, 41-55, and 56+. Every possible sports enthusiast from each group has different goals and preferences and we talked mostly to the 19-25 group.
                     We began with friends and acquaintances through WhatsApp for casual feedback. This allowed us to quickly understand the specific frustrations users face, like unreliable field availability and last-minute cancellations. Using familiar connections helped build trust, allowing for honest feedback about the hassles in organizing games and finding reliable teammates.</p>
                 <p>By keeping conversations informal and exploratory, we followed “The Mom Test” principles, avoiding direct pitches and instead listening for underlying problems. Each conversation revealed new angles, such as the wasted time spent calling unresponsive field owners or dealing with no-show teammates. These insights became the basis for shaping PlayDay’s core features, showing us where a streamlined booking and team-filling platform could genuinely make a difference.</p>

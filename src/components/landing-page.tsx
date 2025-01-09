@@ -14,7 +14,7 @@ export const LandingPage = () => {
                 <p>You can catch a glimpse of our landing page right from this page.</p>
                 <p>You can click <a href="https://introplayday.vercel.app/" className="text-blue-600 dark:text-blue-500 hover:underline">here</a> for the full landing page.</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center w-[90%]">
                 <iframe
                     width="960"
                     height="450"

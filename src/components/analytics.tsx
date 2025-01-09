@@ -25,7 +25,7 @@ export const Analytics = () => {
                 </Carousel>
             </div>
 
-            <p className="text-xl text-wrap w-1/2 text-justify">
+            <p className="text-xl text-wrap w-1/2 sm:w-3/4 text-justify">
                 Our analytics show engagement from users across cities and countries, with traffic driven by search engines and direct links—likely from WhatsApp due to its campaign success. Of 75 pageviews, 32 clicked “Get Started,” and 10 subscribed to emails, though a tracking error missed data for four days. Despite this, a 42% interaction rate from views to clicks highlights strong interest. Optimizing the user funnel and fixing analytics will help refine acquisition and engagement efforts.
             </p>
         </>

@@ -1,4 +1,5 @@
 import { useScrollRef } from "@/hooks/use-scroll";
+import { FaMessage } from "react-icons/fa6";
 
 const videoTags = () => {
     const files = [
@@ -32,6 +33,7 @@ export const UxInterviews = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaMessage />
                 <p className="font-semibold" ref={ref}>Interviews</p>
             </div>
 

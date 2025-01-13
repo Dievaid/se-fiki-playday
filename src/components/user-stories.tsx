@@ -1,4 +1,5 @@
 import { useScrollRef } from "@/hooks/use-scroll";
+import { FaBook } from "react-icons/fa6";
 
 export const UserStories = () => {
     const ref = useScrollRef<HTMLParagraphElement>("User stories");
@@ -6,6 +7,7 @@ export const UserStories = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+				<FaBook />
                 <p className="font-semibold" ref={ref}>User stories</p>
             </div>
 

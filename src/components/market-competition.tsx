@@ -1,5 +1,6 @@
 import { useScrollRef } from "@/hooks/use-scroll";
 import { Card, CardContent, CardTitle } from "./ui/card";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
 
 export const MarketCompetition = () => {
     const ref = useScrollRef<HTMLParagraphElement>("Market Competition");
@@ -7,6 +8,7 @@ export const MarketCompetition = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaMoneyBillTrendUp />
                 <p className="font-semibold" ref={ref}>Market Competition</p>
             </div>
 

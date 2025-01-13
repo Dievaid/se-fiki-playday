@@ -1,6 +1,7 @@
 import { useScrollRef } from "@/hooks/use-scroll";
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { generateItemsAsPNG } from "@/hooks/generate-items";
+import { FaRankingStar } from "react-icons/fa6";
 
 export const Mvp: React.FC = () => {
     const ref = useScrollRef<HTMLParagraphElement>("MVP");
@@ -8,6 +9,7 @@ export const Mvp: React.FC = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaRankingStar />
                 <p className="font-semibold" ref={ref}>MVP</p>
             </div>
 

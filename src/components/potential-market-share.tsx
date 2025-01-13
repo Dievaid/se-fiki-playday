@@ -7,6 +7,7 @@ import {
     TableHeader,
     TableRow
 } from "./ui/table";
+import { FaBasketShopping } from "react-icons/fa6";
 
 export const PotentialMarketShare = () => {
     const ref = useScrollRef<HTMLParagraphElement>("Potential Market Share");
@@ -14,6 +15,7 @@ export const PotentialMarketShare = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaBasketShopping />
                 <p className="font-semibold" ref={ref}>Potential Market Share</p>
             </div>
 

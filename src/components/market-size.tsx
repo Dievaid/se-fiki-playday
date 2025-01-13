@@ -1,4 +1,5 @@
 import { useScrollRef } from "@/hooks/use-scroll";
+import { FaChartPie } from "react-icons/fa6";
 
 export const MarketSize = () => {
     const ref = useScrollRef<HTMLParagraphElement>("Market Size");
@@ -6,6 +7,7 @@ export const MarketSize = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaChartPie />
                 <p className="font-semibold" ref={ref}>Market Size</p>
             </div>
             <p className="text-wrap w-[50%] sm:w-3/4 text-lg text-justify">

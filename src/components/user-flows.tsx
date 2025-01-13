@@ -1,4 +1,5 @@
 import { useScrollRef } from "@/hooks/use-scroll";
+import { FaUserCheck } from "react-icons/fa6";
 // import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "./ui/carousel";
 // import { generateItems } from "@/hooks/generate-items";
 
@@ -8,6 +9,7 @@ export const UserFlows = () => {
     return (
         <>
             <div className="flex items-center space-x-4 text-3xl">
+                <FaUserCheck />
                 <p className="font-semibold" ref={ref}>User flow</p>
             </div>
 
